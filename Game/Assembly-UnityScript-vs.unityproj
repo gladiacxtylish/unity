@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{CFE3DA37-8482-B5E3-F5DB-AC8EBCE34763}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\arrays.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\base\worker\workerMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\base\worker\workerServer.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\base\worker\workerServer.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\base\worker\workerServer.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\css.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\annotatedLanguage\annotatedLanguage.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\annotatedLanguage\annotatedLanguage.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\annotatedLanguage\annotatedLanguage.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\css.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\css.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\css.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\cssWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\cssWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\cssWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\monacoParticipant.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\monacoParticipant.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\monacoParticipant.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\services\browsers.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\services\browsers.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\css\services\browsers.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\handlebars\handlebars.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\handlebars\handlebars.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\handlebars\handlebars.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\html\html.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\html\html.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\html\html.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\html\htmlWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\html\htmlWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\html\htmlWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\javascript\javascript.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\javascript\javascript.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\javascript\javascript.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\javascript\javascriptWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\javascript\javascriptWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\javascript\javascriptWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\json\json.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\json\json.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\json\json.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\json\jsonWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\json\jsonWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\json\jsonWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\less\less.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\less\less.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\less\less.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\less\lessWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\less\lessWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\less\lessWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\lib\htmlLib.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\lib\htmlLib.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\lib\htmlLib.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\markdown\markdown.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\markdown\markdown.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\markdown\markdown.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\markdown\markdownWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\markdown\markdownWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\markdown\markdownWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\nullWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\nullWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\nullWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\php\php.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\php\php.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\php\php.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\php\phpWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\php\phpWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\php\phpWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\plaintext\plaintext.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\plaintext\plaintext.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\plaintext\plaintext.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\razor\razor.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\razor\razor.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\razor\razor.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\razor\razorWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\razor\razorWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\razor\razorWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\sass\sass.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\sass\sass.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\sass\sass.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\sass\sassWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\sass\sassWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\sass\sassWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\js\angularServiceRewriter.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\js\angularServiceRewriter.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\js\angularServiceRewriter.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\js\globalVariableRewriter.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\js\globalVariableRewriter.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\js\globalVariableRewriter.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\js\importAndExportRewriter.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\js\importAndExportRewriter.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\js\importAndExportRewriter.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\lib\typescriptServices.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\lib\typescriptServices.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\lib\typescriptServices.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\participants\filenameSuggestions.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\participants\filenameSuggestions.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\participants\filenameSuggestions.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\participants\nlsParticipant.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\participants\nlsParticipant.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\participants\nlsParticipant.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\project\projectResolver.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\project\projectResolver.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\project\projectResolver.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\typescriptMode.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\typescriptMode.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\typescriptMode.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\typescriptWorker2.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\typescriptWorker2.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\typescript\typescriptWorker2.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\vsxml\vsxml.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\vsxml\vsxml.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\vsxml\vsxml.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\loader.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\monaco\ui\dashboard\dashboard.main.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\monaco\ui\workbench\native\native.main.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\monaco\ui\workbench\native\native.main.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\monaco\ui\workbench\native\native.main.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\monaco\ui\workbench\native\native.plugin.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\monaco\ui\workbench\native\native.plugin.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\monaco\ui\workbench\native\native.plugin.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\monaco\ui\workbench\web\workbench.main.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\native.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\platform\request\nativeWorkerRequestService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\platform\request\nativeWorkerRequestService.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\platform\request\nativeWorkerRequestService.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\text.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\build\buildLogMode.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\build\buildLogMode.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\build\buildLogMode.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\build\buildLogWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\build\buildLogWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\build\buildLogWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\build\buildViewlet.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\build\buildViewlet.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\build\buildViewlet.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\debug\debugViewlet.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\debug\debugViewlet.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\debug\debugViewlet.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\git\gitEditorModeWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\git\gitEditorModeWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\git\gitEditorModeWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\git\gitEditorModes.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\git\gitEditorModes.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\git\gitEditorModes.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\git\gitViewlet.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\git\gitViewlet.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\git\gitViewlet.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\output\outputMode.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\output\outputMode.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\output\outputMode.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\output\outputWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\output\outputWorker.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\output\outputWorker.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\search\openAnythingHandler.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\search\openAnythingHandler.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\search\openAnythingHandler.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\search\searchViewlet.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\search\searchViewlet.nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\workbench\contrib\search\searchViewlet.nls.keys.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\env.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\index-base.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\index-servant.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\json.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\main.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\menu.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\applicationinsights\Sender.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\applicationinsights\ai.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\applicationinsights\ai_stub.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\applicationinsights\applicationInsights.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\applicationinsights\install.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\lib\fsevents-handler.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\lib\nodefs-handler.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\lib\chars.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\lib\expand.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\lib\glob.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\lib\utils.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\check.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\array-differ.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\current.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\filter.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\for-lefthand.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\for-negative.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\for-reverse.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\for.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\forEach-2.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\forEach.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\reduce.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\while-indexof.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\while-multi-unshift.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\while-multi.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\while-splice.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\while-unshift.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\code\while.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\fixtures\med.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\fixtures\short.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\benchmark\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\node_modules\array-slice\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\arr-diff\test.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\node_modules\expand-range\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\node_modules\expand-range\node_modules\fill-range\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\node_modules\expand-range\node_modules\fill-range\node_modules\is-number\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\node_modules\expand-range\node_modules\fill-range\node_modules\isobject\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\node_modules\expand-range\node_modules\fill-range\node_modules\randomatic\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\node_modules\expand-range\node_modules\fill-range\node_modules\repeat-string\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\node_modules\preserve\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\node_modules\preserve\test.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\braces\node_modules\repeat-element\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\debug\browser.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\debug\debug.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\debug\node.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\debug\node_modules\ms\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\expand-brackets\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\filename-regex\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\kind-of\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\object.omit\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\object.omit\node_modules\for-own\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\object.omit\node_modules\for-own\node_modules\for-in\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\object.omit\node_modules\isobject\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\object.omit\test.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\parse-glob\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\parse-glob\node_modules\glob-base\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\parse-glob\node_modules\is-dotfile\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\parse-glob\node_modules\is-extglob\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\regex-cache\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\regex-cache\node_modules\to-key\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\regex-cache\node_modules\to-key\node_modules\arr-map\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\anymatch\node_modules\micromatch\node_modules\regex-cache\node_modules\to-key\node_modules\for-in\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\arrify\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\async-each\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\fsevents\fsevents.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\fsevents\node_modules\nan\include_dirs.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\glob-parent\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\glob-parent\test.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\is-binary-path\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\is-glob\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\examples\callback-api.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\examples\grep.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\examples\stream-api-pipe.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\examples\stream-api.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\graceful-fs\graceful-fs.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\graceful-fs\polyfills.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\minimatch\minimatch.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\minimatch\node_modules\lru-cache\lib\lru-cache.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\minimatch\node_modules\sigmund\bench.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\minimatch\node_modules\sigmund\sigmund.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\duplex.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\lib\_stream_duplex.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\lib\_stream_passthrough.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\lib\_stream_readable.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\lib\_stream_transform.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\lib\_stream_writable.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\node_modules\core-util-is\lib\util.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\node_modules\core-util-is\util.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\node_modules\inherits\inherits.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\node_modules\inherits\inherits_browser.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\node_modules\inherits\test.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\node_modules\isarray\build\build.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\node_modules\isarray\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\node_modules\string_decoder\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\passthrough.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\readable.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\transform.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\node_modules\readable-stream\writable.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\readdirp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\chokidar\node_modules\readdirp\stream-api.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\bundles\caniuse.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\bundles\snippets.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\gulpfile.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\balance.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\base64.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\editPoints.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\evaluateMath.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\expandAbbreviation.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\incrementDecrement.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\lineBreaks.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\main.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\mergeLines.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\reflectCSSValue.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\removeTag.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\selectItem.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\selectLine.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\splitJoinTag.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\toggleComment.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\updateImageSize.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\updateTag.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\action\wrapWithAbbreviation.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\caniuse.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\elements.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\handlerList.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\htmlMatcher.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\logger.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\preferences.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\profile.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\range.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\resources.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\stringScore.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\stringStream.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\tabStops.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\assets\tokenIterator.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\editTree\base.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\editTree\css.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\editTree\xml.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\emmet.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\bem.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\comment.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\css.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\escape.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\format.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\haml.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\html.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\jade.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\jsx.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\main.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\singleLine.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\slim.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\trim.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\filter\xsl.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\generator\lorem.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\interfaces\IEmmetEditor.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\interfaces\IEmmetFile.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\parser\abbreviation.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\parser\css.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\parser\processor\attributes.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\parser\processor\href.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\parser\processor\pastedContent.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\parser\processor\resourceMatcher.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\parser\processor\tagName.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\parser\xml.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\plugin\file.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\resolver\css.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\resolver\cssGradient.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\resolver\gradient\linear.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\resolver\tagName.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\utils\abbreviation.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\utils\action.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\utils\base64.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\utils\comments.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\utils\common.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\utils\cssSections.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\utils\editor.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\utils\math.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\utils\template.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\vendor\almond.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\vendor\klass.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\emmet\lib\vendor\stringScore.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\first-mate.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\grammar-registry.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\grammar.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\injections.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\null-grammar.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\pattern.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\rule.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\scanner.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\scope-selector-matchers.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\scope-selector-parser.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\lib\scope-selector.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\node_modules\oniguruma-prebuilt\lib\onig-reg-exp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\node_modules\oniguruma-prebuilt\lib\oniguruma.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\node_modules\underscore\underscore-min.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\first-mate\node_modules\underscore\underscore.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\getmac\node_modules\extract-opts\example.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\getmac\node_modules\extract-opts\node_modules\typechecker\cyclic.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\getmac\node_modules\extract-opts\node_modules\typechecker\out\lib\typechecker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\getmac\node_modules\extract-opts\out\lib\extract-opts.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\getmac\out\lib\getmac.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\graceful-fs\graceful-fs.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\graceful-fs\polyfills.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\encodings\dbcs-codec.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\encodings\dbcs-data.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\encodings\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\encodings\internal.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\encodings\sbcs-codec.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\encodings\sbcs-data-generated.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\encodings\sbcs-data.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\encodings\utf16.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\encodings\utf7.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\lib\extend-node.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\lib\index.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\iconv-lite\lib\streams.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\minimatch\minimatch.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\minimatch\node_modules\lru-cache\lib\lru-cache.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\minimatch\node_modules\sigmund\bench.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\minimatch\node_modules\sigmund\sigmund.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\semver\semver.browser.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\semver\semver.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\semver\semver.min.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\winreg\lib\registry.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\winreg\test.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\xmlhttprequest\example\demo.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\xmlhttprequest\lib\XMLHttpRequest.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\objects.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\paths.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\gulpfile.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.bat\batDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.bat\batMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.bat\tests\batTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.coffeescript\coffeeDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.coffeescript\coffeeMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.coffeescript\tests\coffeeTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.cpp\cppDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.cpp\cppMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.cpp\tests\cppTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\documentation.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\abstractSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\bufferSyncSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\codeLensSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\declarationSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\diagnosticsSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\extraInfoSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\formattingSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\navigateTypesSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\occurrencesSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\outlineSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\parameterHintsSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\quickFixSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\referenceSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\renameSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\snippets.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\features\suggestSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\omnisharp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\omnisharp\omnisharpLauncher.native.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\omnisharp\omnisharpServer.native.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\omnisharpMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp\csharpDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp\csharpMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp\tests\csharpTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.dockerfile\dockerfileDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.dockerfile\dockerfileMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.dockerfile\tests\dockerfileTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.fsharp\fsharpDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.fsharp\fsharpMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.fsharp\tests\fsharpTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.go\goDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.go\goMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.go\tests\goTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.ini\iniDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.ini\iniMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.jade\jadeDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.jade\jadeMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.jade\tests\jadeTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.java\javaDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.java\javaMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.java\tests\javaTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.lua\luaDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.lua\luaMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.lua\tests\luaTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.objective-c\objective-cDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.objective-c\objective-cMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.objective-c\tests\objective-cTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.powershell\powershellDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.powershell\powershellMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.powershell\tests\powershellTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.python\pythonDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.python\pythonMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.python\pythonWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.python\tests\pythonTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.r\rDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.r\rMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.r\tests\rTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.ruby\rubyDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.ruby\rubyMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.ruby\rubyWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.ruby\tests\rubyTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.tsql\sqlDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.tsql\sqlMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.tsql\tests\sqlTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\bufferSyncSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\commentsSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\configuration.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\declarationSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\extraInfoSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\formattingSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\navigateTypesSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\occurrencesSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\outlineSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\parameterHintsSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\previewer.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\referenceSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\renameSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\features\suggestSupport.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\lib\tsserver.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\protocol.const.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\typescriptMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\typescriptService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.typescript\typescriptServiceClient.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.vb\tests\vbTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.vb\vbDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.vb\vbMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.vb\vbWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.xml\tests\xmlTests.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.xml\xmlDef.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.xml\xmlMain.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.xml\xmlWorker.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\reporter.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\servant.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\servants.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\_references.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\availableLanguages.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\config.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\config\db.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\config\events.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\config\home.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\config\logger.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\config\tools.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\config\workspaces.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\build\base.impl.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\build\build.contribution.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\build\build.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\build\buildImpl.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\build\msbuild.contribution.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\build\msbuild.impl.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\build\nake.contribution.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\build\nake.impl.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\contributions.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\fileService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\files.contribution.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\files.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\glob\actualGlobApp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\glob\globApp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\glob\globService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\stat.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\tests\filewatcher.test.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\tests\stat.test.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\watcher\unix\actualWatcherApp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\watcher\unix\chokidarWatcherService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\watcher\unix\watcherApp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\watcher\unix\watcherService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\watcher\waws\watcherService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\files\watcher\win32\watcherService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\actualGitApp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\cred\samples.cred.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\git.config.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\git.contribution.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\git.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\git.lib.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\gitApp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\nativeRawGitService.impl.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\nativeRawGitService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\git\rawGitService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\http\http.contribution.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\http\rawHttpService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\ipc\ipc.contribution.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\ipc\ipc.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\ipc\ipcImpl.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\search\actualSearchApp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\search\fileSearch.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\search\ipcRawSearchService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\search\rawSearchService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\search\search.contribution.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\search\search.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\search\searchApp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\search\tests\search.test.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\search\textSearch.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\telemetry\telemetry.contribution.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\telemetry\telemetry.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\telemetry\telemetryClient.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\contrib\typescript\lib\typescriptServices.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\assert.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\async.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\cache.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\cli.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\collections.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\compress.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\db\db.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\db\engines\inmemory.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\db\engines\jsondb.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\edge.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\encoding.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\env.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\errors.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\eventBus.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\events.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\extcp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\extfs.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\extnet.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\extpath.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\flow.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\hash.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\http2.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\import.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\injector.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\injectorService.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\jshtm.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\lifecycle.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\logger.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\mime.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\nls.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\node.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\objects.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\performance.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\pfs.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\process\process.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\project.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\promises.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\route.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\service.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\store.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\stream.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\strings.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\system.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\temp.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\typeScript\tsc.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\typeScript\typescript.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\typeScript\typescriptServices.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\types.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\uri.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\utils.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\uuid.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\watcher\base.win32.watcher.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\watcher\edge.win32.watcher.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\watcher\process.win32.watcher.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\watcher\watcher.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\lib\zip\zip.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\loader.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\middleware.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\model\modelDb.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\model\workspace.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\monaco.impl.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\monaco.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\platform.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\routes.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\run-monaco-actual.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\run-monaco.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\run-siteextension-actual.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\run-siteextension.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\run.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\start.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\server\version.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\settings.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\storage.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\update-manager.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\win32\auto-updater.win32.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\win32\squirrel.win32.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\window.js" />
+     <Compile Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\windows.js" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.egit.mylyn_3.4.2.201412180340-r\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.dbws.eclipselink.feature_1.2.101.v201501152048\META-INF\maven\org.eclipse.webtools.dali\org.eclipse.jpt.dbws.eclipselink.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.gef_3.9.101.201408150207\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\scripts\package.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.apache.derby.feature_1.12.0.v201406061321-777B8gBmKFQ3NjRaMjbx8GDI\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.logback.feature_1.5.1.20150109-1820\META-INF\maven\org.eclipse.m2e\org.eclipse.m2e.logback.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\data\30\plugin\plugin.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.connectivity.feature_1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8\feature.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\ThirdPartyNotices.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.web_core.feature_3.6.3.v201502041526\META-INF\maven\org.eclipse.webtools.javaee\org.eclipse.jst.web_core.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.wtp.feature_1.1.0.20140611-1646\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.ws_ui.feature_3.6.3.v201501292352\META-INF\maven\org.eclipse.webtools.webservices\org.eclipse.wst.ws_ui.feature\pom.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\layout\bpush_setundistur_time.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.web_core.feature_3.6.3.v201501312139\META-INF\maven\org.eclipse.webtools.sourceediting\org.eclipse.wst.web_core.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jgit_3.4.2.201412180340-r\META-INF\maven\org.eclipse.jgit.feature\org.eclipse.jgit\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.epp.mpc_1.3.2.v20150218-2039\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.converter_2.10.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\layout\bpush_lapp_notification_layout.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20141221-2352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.ws_userdoc.feature_3.1.400.v201405061938\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.enterprise_userdoc.feature_3.6.0.v201405070205\META-INF\maven\org.eclipse.webtools.javaee\org.eclipse.jst.enterprise_userdoc.feature\pom.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\layout\main.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.web_ui.feature_3.6.3.v201502041526\feature.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\omnisharp\bin\approot\packages\OmniSharp\1.0.0\lib\aspnetcore50\OmniSharp.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\layout\bpush_media_list.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.oda.feature_1.12.0.v201406061321-7D7U7OEVVFNSGfJoIz0Of\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.cvs_1.4.100.v20150204-1700\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.ecore.edit_2.9.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.common_core.feature_3.6.3.v201501292352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.core_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.jdt.debug_3.8.102.v20150115-1323\plugin.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.tm.terminal.ssh_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.tm.terminal.ssh\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\configuration\org.eclipse.osgi\331\data\421444798\artifacts.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\layout\custom_activity.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\layout\bpush_setundistur_time.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_adapters.feature_3.2.301.v201410241731\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.useractions_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.doc.user_1.12.0.v201405281819-47C18w95FHAM87EJJD7\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.common_ui.feature_3.6.3.v201501292352\META-INF\maven\org.eclipse.webtools.common\org.eclipse.wst.common_ui.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.ingres.feature_1.12.0.v201406061321-540AkF78Z7UCRAQDB\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.webpageeditor.feature_2.6.2.v201409302019\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\layout\bpush_media_list_item.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.m2e.archetype.common_1.5.1.20150109-1819\about_files\dom4j-LICENSE.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.dbws.eclipselink.feature_1.2.101.v201501152048\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.common.fproj_3.6.1.v201409111446\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.web_core.feature_3.6.3.v201501312139\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.web_userdoc.feature_3.6.0.v201405062147\META-INF\maven\org.eclipse.webtools.sourceediting\org.eclipse.wst.web_userdoc.feature\pom.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\applicationinsights\License.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.epp.package.common.feature_4.4.2.20150219-0708\META-INF\maven\org.eclipse.epp\org.eclipse.epp.package.common.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.ecore_2.10.2.v20150123-0348\feature.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\lib\beautify-html.license.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xml.xpath2.processor.feature_2.0.301.v201409111854\META-INF\maven\org.eclipse.webtools.sourceediting\org.eclipse.wst.xml.xpath2.processor.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.hsqldb.feature_1.12.0.v201406061321-67G0AqGDM7KfNWJjJS8GDI\feature.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\layout\bpush_download_progress.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.cxf.feature_1.1.202.v201410232139\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\values\colors.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_adapters.ext.feature_3.3.302.v201501040116\META-INF\maven\org.eclipse.webtools.servertools\org.eclipse.jst.server_adapters.ext.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.tm.terminal.telnet_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.tm.terminal.telnet\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.equinox.p2.user.ui_2.2.0.v20150129-0838\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.help_2.0.103.v20150204-1700\feature.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\proguard-project.txt" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\data\30\fragment\fragment.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rcp.configuration_1.0.3.v20150204-1745\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\plugin.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\semver\foot.js.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.ws_ui.feature_3.6.3.v201501292352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\templates\headless-build\customAssembly.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.terminals_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.rse.terminals\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.sqlite.feature_1.12.0.v201406061321-542AkF7AJ7SAKAPBF\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_userdoc.feature_3.3.201.v201410241731\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.epp.package.jee_4.4.2.20150219-0708\META-INF\maven\org.eclipse.epp\org.eclipse.epp.package.jee\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\about_files\ASL-LICENSE-2.0.txt" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\templates\features\customBuildCallbacks.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.common.feature_1.4.1.v201410241959\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\about_files\LICENSE-2.0.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.tm.terminal_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.draw2d_3.9.101.201408150207\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.mapping.ui_2.8.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.jaxb.eclipselink.feature_1.4.102.v201501171820\META-INF\maven\org.eclipse.webtools.dali\org.eclipse.jpt.jaxb.eclipselink.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.feature_1.12.0.v201406061321-7J9t0B_0haN-EchrvGIyEh2M8j8a\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jgit_3.4.2.201412180340-r\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.telnet_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.rse.telnet\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.common_2.10.1.v20150123-0348\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xml_userdoc.feature_3.6.0.v201405062147\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.jaxws.dom.feature_1.0.301.v201410230643\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.common_core.feature_3.6.3.v201501292352\META-INF\maven\org.eclipse.webtools.common\org.eclipse.wst.common_core.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.tm.terminal_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.tm.terminal\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.webpageeditor.feature_2.6.2.v201409302019\META-INF\maven\org.eclipse.webtools.jsf\org.eclipse.jst.webpageeditor.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.dstore_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.rse.dstore\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xml_core.feature_3.6.3.v201501211904\META-INF\maven\org.eclipse.webtools.sourceediting\org.eclipse.wst.xml_core.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.connectivity.oda.designer.feature_1.12.0.v201406061321-4147w312514242925\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.epp.package.jee.feature_4.4.2.20150219-0708\META-INF\maven\org.eclipse.epp\org.eclipse.epp.package.jee.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.intro_1.12.0.v201405281819-26-7w312116392911\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.useractions_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.rse.useractions\pom.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\build.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\layout\notification_custom_builder.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.enterprise_ui.feature_3.6.3.v201501281502\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.2.v20141221-2352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.enterprise_userdoc.feature_3.6.0.v201405070205\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.wtp.jpa.feature_1.1.0.e43-20140611-1648\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\layout\bpush_media_list_item.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature_2.5.2.v201410101742\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20141221-2352\asl-v20.txt" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\scripts\genericTargets.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_core.feature_3.4.101.v201410241731\META-INF\maven\org.eclipse.webtools.servertools\org.eclipse.jst.server_core.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.bugzilla_feature_3.14.2.v20150217-2341\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jdt_3.10.1.v20150204-1700\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.jsdt.feature_1.6.100.v201410221502\META-INF\maven\org.eclipse.webtools.jsdt.features\org.eclipse.wst.jsdt.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\configuration\org.eclipse.ui.intro.universal\extensionCount.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.codegen_2.10.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.e4.rcp_1.3.101.v20150204-1353\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.ui.intro.universal_3.2.701.v20150204-1123\plugin.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205\META-INF\maven\org.eclipse.webtools.javaee\org.eclipse.jst.enterprise_core.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.server_adapters.feature_3.2.401.v201410241731\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.codegen.ui_2.8.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\omnisharp\bin\approot\packages\OmniSharp.Stdio\1.0.0\lib\aspnet50\OmniSharp.Stdio.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.team_feature_3.14.2.v20150218-0125\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\templates\headless-build\customTargets.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.egit.mylyn_3.4.2.201412180340-r\META-INF\maven\org.eclipse.egit.feature\org.eclipse.egit.mylyn\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.jsdt.feature_1.6.100.v201410221502\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\scripts\productBuild\allElements.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\values\colors.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.m2e.archetype.common_1.5.1.20150109-1819\about_files\MPL-1.1.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jsf.feature_3.7.2.v201410101742\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature_2.5.2.v201410101742\META-INF\maven\org.eclipse.webtools.jsf\org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.connectivity.oda.designer.core.feature_1.12.0.v201406061321-787B7PBgJ9DUBNCVAaSZ\feature.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\layout\notification_custom_builder.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.ws_wsdl15.feature_1.5.400.v201405061938\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\p2\org.eclipse.equinox.p2.core\cache\artifacts.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.context_feature_3.14.2.v20150218-0125\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.common.fproj_3.6.1.v201409111446\META-INF\maven\org.eclipse.webtools.common\org.eclipse.wst.common.fproj\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.sqltools.doc.user_1.12.0.v201405281819-37D-7733L3D753L7BBF\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\values\strings.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_adapters.ext.feature_3.3.302.v201501040116\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.tm.terminal.telnet_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_adapters.feature_3.2.301.v201410241731\META-INF\maven\org.eclipse.webtools.servertools\org.eclipse.jst.server_adapters.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.codegen.ecore_2.10.2.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.discovery_3.14.2.v20150217-2244\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.ui.themes_1.0.1.v20141126-1957\plugin.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\bin\AndroidManifest.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.2.v20141221-2352\asl-v20.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.common.eclipselink.feature_1.3.101.v201410241959\feature.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\omnisharp\bin\approot\packages\OmniSharp.Stdio\1.0.0\lib\aspnetcore50\OmniSharp.Stdio.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\layout\bpush_download_progress.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.wtp.jaxrs.feature_1.1.0.20140611-1646\META-INF\maven\org.eclipse.m2e.wtp\org.eclipse.m2e.wtp.jaxrs.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.mapping.ecore.editor_2.9.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.common_ui.feature_3.6.3.v201501292352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.wtp.jpa.feature_1.1.0.e43-20140611-1648\META-INF\maven\org.eclipse.m2e.wtp\org.eclipse.m2e.wtp.jpa.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\templates\headless-build\allElements.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.epp.package.jee.feature_4.4.2.20150219-0708\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\layout\bpush_setundistur_time.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.web_ui.feature_3.6.3.v201502041526\META-INF\maven\org.eclipse.webtools.javaee\org.eclipse.jst.web_ui.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xml_ui.feature_3.6.3.v201501292352\META-INF\maven\org.eclipse.webtools.sourceediting\org.eclipse.wst.xml_ui.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.edit.ui_2.10.2.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.tm.terminal.view_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.tm.terminal.view\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xsl.feature_1.3.401.v201409111855\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\values\strings.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.m2e.archetype.common_1.5.1.20150109-1819\about_files\jdom-LICENSE.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.mysql.feature_1.12.0.v201406061321-5478AkF7AK8X9JCREG\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.jaxb.feature_1.5.2.v201501171820\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.ws_userdoc.feature_3.1.400.v201405061938\META-INF\maven\org.eclipse.webtools.webservices\org.eclipse.wst.ws_userdoc.feature\pom.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\AndroidManifest.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.dstore_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\intro\tutorialsExtensionContent.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.sonatype.m2e.mavenarchiver.feature_0.16.0.201401211452-signed-20140310144306\META-INF\maven\org.sonatype.m2e.extras\org.sonatype.m2e.mavenarchiver.feature\pom.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\AndroidManifest.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.msft.feature_1.12.0.v201406061321-5478AkF7AO7UBQAK8M\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.commons.notifications_1.6.2.v20150217-2244\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\intro\whatsnewExtensionContent1.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.commons.repositories_1.6.2.v20150217-2244\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\artifacts.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.ecf.core.ssl.feature_1.0.0.v20141221-2352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.equinox.p2.discovery.feature_1.0.200.v20140512-1802\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.local_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.oda.designer.feature_1.12.0.v201406061321-647L9oB58H5E8E8TBK\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.server_userdoc.feature_3.3.300.v201405011426\META-INF\maven\org.eclipse.webtools.servertools\org.eclipse.wst.server_userdoc.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.jpa.eclipselink.feature_3.4.1.v201409111648\META-INF\maven\org.eclipse.webtools.dali\org.eclipse.jpt.jpa.eclipselink.feature\pom.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.csharp.o\omnisharp\bin\approot\packages\OmniSharp\1.0.0\lib\aspnet50\OmniSharp.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.platform_4.4.2.v20150204-1700\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.wtp.feature_1.1.0.20140611-1646\META-INF\maven\org.eclipse.m2e.wtp\org.eclipse.m2e.wtp.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\intro\migrateExtensionContent.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.oracle.feature_1.12.0.v201406061321-548fAkF7AL7RBJANAI\feature.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\markdown\marked.license.txt" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.ui.intro.universal_3.2.701.v20150204-1123\introContent.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.ide_feature_3.14.2.v20150218-0125\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\plugin.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.databinding_1.4.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.jaxws.feature_1.2.201.v201410232139\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\introData.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.ws_core.feature_3.6.0.v201405061938\META-INF\maven\org.eclipse.webtools.webservices\org.eclipse.wst.ws_core.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\data\21\plugin\plugin.xml" />
+     <None Include="Assets\Downloads\eclipse\configuration\org.eclipse.osgi\331\data\421444798\content.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\data\21\fragment\fragment.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.commons_3.14.2.v20150217-2244\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.tm.terminal.ssh_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.ecf.filetransfer.feature_3.9.2.v20141221-2352\asl-v20.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.common.eclipselink.feature_1.3.101.v201410241959\META-INF\maven\org.eclipse.webtools.dali\org.eclipse.jpt.common.eclipselink.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.sqldevtools.parsers.feature_1.12.0.v201406061321-623BgJ9EE9ZJRDZLA\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.ftp_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.egit_3.4.2.201412180340-r\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.wtp.jsf.feature_1.1.0.20140611-1646\META-INF\maven\org.eclipse.m2e.wtp\org.eclipse.m2e.wtp.jsf.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.jpa.feature_3.4.1.v201410241959\feature.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\node_modules\semver\head.js.txt" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\layout\bpush_download_progress.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.common.fproj.enablement.jdt_3.6.3.v201501141810\META-INF\maven\org.eclipse.webtools.common\org.eclipse.jst.common.fproj.enablement.jdt\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.jpa.feature_3.4.1.v201410241959\META-INF\maven\org.eclipse.webtools.dali\org.eclipse.jpt.jpa.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.server_adapters.feature_3.2.401.v201410241731\META-INF\maven\org.eclipse.webtools.servertools\org.eclipse.wst.server_adapters.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.ecore.editor_2.10.1.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.jaxws.feature_1.2.201.v201410232139\META-INF\maven\org.eclipse.webtools.webservices\org.eclipse.jst.ws.jaxws.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.ecf.filetransfer.feature_3.9.2.v20141221-2352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.wtp.jsf.feature_1.1.0.20140611-1646\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\layout\notification_custom_builder.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.commons.identity_1.6.2.v20150217-2244\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xml_core.feature_3.6.3.v201501211904\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.m2e.maven.indexer_1.5.1.20150109-1819\about_files\LICENSE-2.0.txt" />
+     <None Include="Assets\Downloads\VSCode-osx\license.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.sybase.feature_1.12.0.v201406061321-7E478F9NiNc2S7fxRCTD\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.gef_3.9.101.201408150207\META-INF\maven\org.eclipse.gef.features\org.eclipse.gef\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xml_ui.feature_3.6.3.v201501292352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\cheatsheets\cvs_checkout.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\cheatsheets\cvs_merge.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jsf.feature_3.7.2.v201410101742\META-INF\maven\org.eclipse.webtools.jsf\org.eclipse.jsf.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819\about_files\LICENSE-2.0.txt" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\intro\whatsnewExtensionContent3.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.jdt.feature_1.12.0.v201406061321-2-07w312218332612\feature.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\less\parser\less.grammar.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_ui.feature_3.4.101.v201410241731\META-INF\maven\org.eclipse.webtools.servertools\org.eclipse.jst.server_ui.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.postgresql.feature_1.12.0.v201406061321-553AkF7AK8PCRBQBP\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.jaxws_userdoc.feature_1.0.401.v201410230643\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.sqldevtools.ddl.feature_1.12.0.v201406061321-27B-78B08EG8S_IRVNeUiL6au\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.sqldevtools.results.feature_1.12.0.v201406061321-427H9oB58F6A8I5KGJ\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.jaxws.dom.feature_1.0.301.v201410230643\META-INF\maven\org.eclipse.webtools.webservices\org.eclipse.jst.ws.jaxws.dom.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.server_ui.feature_3.3.402.v201501132217\META-INF\maven\org.eclipse.webtools.servertools\org.eclipse.wst.server_ui.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.sonatype.m2e.mavenarchiver.feature_0.16.0.201401211452-signed-20140310144306\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.feature_1.5.1.20150109-1820\META-INF\maven\org.eclipse.m2e\org.eclipse.m2e.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.edit_2.10.1.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xsl.feature_1.3.401.v201409111855\META-INF\maven\org.eclipse.webtools.sourceediting\org.eclipse.wst.xsl.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.common.ui_2.9.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\layout\bpush_media_list.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf_2.10.2.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\proguard-project.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_core.feature_3.4.101.v201410241731\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.web_userdoc.feature_3.6.0.v201405070205\META-INF\maven\org.eclipse.webtools.javaee\org.eclipse.jst.web_userdoc.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.equinox.p2.rcp.feature_1.2.0.v20140523-0116\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.server_core.feature_3.3.402.v201409292121\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.sqldevtools.ddlgen.feature_1.12.0.v201406061321-7A-7DF7RZHQUMdThK5_t\feature.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\plugins\vs.language.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xml.xpath2.processor.feature_2.0.301.v201409111854\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.equinox.p2.extras.feature_1.2.0.v20150129-0838\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.common.fproj.enablement.jdt_3.6.3.v201501141810\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.telnet_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20141221-2352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.web_core.feature_3.6.3.v201502041526\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.core_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.rse.core\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.sqldevtools.feature_1.12.0.v201406061321-7N8P7IFDri6qjCyg6Q61VhVsihvO\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.ssh_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\configuration\org.eclipse.ui.intro.universal\extensionNames.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.rse\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.ssh_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.rse.ssh\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.feature_1.5.1.20150109-1820\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.jdbc.feature_1.12.0.v201406061321-4-49oB58B7DAF7FCH\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\scripts\productBuild\productBuild.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\layout\main.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.axis2tools.feature_1.1.301.v201410160332\META-INF\maven\org.eclipse.webtools.webservices\org.eclipse.jst.ws.axis2tools.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.web_ui.feature_3.6.3.v201501312139\META-INF\maven\org.eclipse.webtools.sourceediting\org.eclipse.wst.web_ui.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.tasks.ide_3.14.2.v20150217-2341\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.jaxb.feature_1.5.2.v201501171820\META-INF\maven\org.eclipse.webtools.dali\org.eclipse.jpt.jaxb.feature\pom.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\php\scripts\PHP53Schema.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.jpa.eclipselink.feature_3.4.1.v201409111648\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.monitor_3.14.2.v20150217-2244\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.ws_core.feature_3.6.0.v201405061938\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_userdoc.feature_3.3.201.v201410241731\META-INF\maven\org.eclipse.webtools.servertools\org.eclipse.jst.server_userdoc.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.sqldevtools.sqlbuilder.feature_1.12.0.v201406061321-79-7FEVVFNSI_QiI-Sd\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\layout\bpush_lapp_notification_layout.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.connectivity.oda.feature_1.12.0.v201406061321-7E7C7YBgJ9ET9OHLDfLZ\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.enterprise_ui.feature_3.6.3.v201501281502\META-INF\maven\org.eclipse.webtools.javaee\org.eclipse.jst.enterprise_ui.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.server_ui.feature_3.4.101.v201410241731\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.draw2d_3.9.101.201408150207\META-INF\maven\org.eclipse.draw2d.features\org.eclipse.draw2d\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.epp.package.common.feature_4.4.2.20150219-0708\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\layout\bpush_media_list.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\values\strings.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\intro\overviewExtensionContent.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.m2e.archetype.common_1.5.1.20150109-1819\about_files\LICENSE-2.0.txt" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.m2e.maven.runtime.slf4j.simple_1.5.1.20150109-1819\about_files\slf4j-simple-LICENSE.txt" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\layout\bpush_lapp_notification_layout.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.server_userdoc.feature_3.3.300.v201405011426\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn_feature_3.14.2.v20150217-2341\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.server_ui.feature_3.3.402.v201501132217\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.codegen.ecore.ui_2.10.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.equinox.p2.core.feature_1.3.0.v20140523-0116\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.common.feature_1.4.1.v201410241959\META-INF\maven\org.eclipse.webtools.dali\org.eclipse.jpt.common.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.sqldevtools.data.feature_1.12.0.v201406061321-647ABgJ9EKDJDNAdHO\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature_1.12.0.v201406061321-4218375LG5BJ93413\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.egit_3.4.2.201412180340-r\META-INF\maven\org.eclipse.egit.feature\org.eclipse.egit\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.web_ui.feature_3.6.3.v201501312139\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.server_core.feature_3.3.402.v201409292121\META-INF\maven\org.eclipse.webtools.servertools\org.eclipse.wst.server_core.feature\pom.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\values\colors.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.ecf.core.feature_1.1.0.v20141221-2352\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.java_feature_3.14.2.v20150218-0125\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.wtp.jaxrs.feature_1.1.0.20140611-1646\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.jaxws_userdoc.feature_1.0.401.v201410230643\META-INF\maven\org.eclipse.webtools.webservices\org.eclipse.jst.ws.jaxws_userdoc.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.m2e.archetype.common_1.5.1.20150109-1819\about_files\LICENSE-1.1.txt" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\intro\whatsnewExtensionContent2.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jpt.jaxb.eclipselink.feature_1.4.102.v201501171820\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.axis2tools.feature_1.1.301.v201410160332\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.ws.cxf.feature_1.1.202.v201410232139\META-INF\maven\org.eclipse.webtools.webservices\org.eclipse.jst.ws.cxf.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.mapping_2.8.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.web_userdoc.feature_3.6.0.v201405062147\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.connectivity.doc.user_1.12.0.v201405281819-37D-7733L3D753L7BBF\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.terminals_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.ftp_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.rse.ftp\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rse.local_3.7.0.201502160819\META-INF\maven\org.eclipse.tm.features\org.eclipse.rse.local\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.m2e.logback.feature_1.5.1.20150109-1820\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.jst.web_userdoc.feature_3.6.0.v201405070205\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.xml_userdoc.feature_3.6.0.v201405062147\META-INF\maven\org.eclipse.webtools.sourceediting\org.eclipse.wst.xml_userdoc.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.epp.package.jee_4.4.2.20150219-0708\helpData.xml" />
+     <None Include="Assets\Downloads\eclipse\configuration\org.eclipse.update\platform.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.ibm.feature_1.12.0.v201406061321-7G-7cFD3wThz-VTq2cpq3\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.mylyn.wikitext_feature_2.3.2.v20150217-2315\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.wst.ws_wsdl15.feature_1.5.400.v201405061938\META-INF\maven\org.eclipse.webtools.webservices\org.eclipse.wst.ws_wsdl15.feature\pom.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.rcp_4.4.2.v20150204-1700\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\templates\plugins\customBuildCallbacks.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.tm.terminal.view_3.7.0.201502160819\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\layout\custom_activity.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\Demo\res\layout\main.xml" />
+     <None Include="Assets\Downloads\PushDemo\PushDemo\res\layout\bpush_media_list_item.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.platform_4.4.2.v20150204-1700\helpData.xml" />
+     <None Include="Assets\Downloads\VSCode-osx\Visual Studio Code.app\Contents\Resources\app\client\vs\languages\csharp\ui\octicons\LICENSE.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.databinding.edit_1.4.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.apache.commons.discovery_0.2.0.v201004190315\about_files\LICENSE.txt" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.modelbase.feature_1.12.0.v201406061321-7707GCcNBHLDaKTEcRi\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\scripts\build.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.pde.build_3.9.0.v20140415-2029\templates\packager\customTargets.xml" />
+     <None Include="Assets\Downloads\eclipse\plugins\org.eclipse.epp.package.jee_4.4.2.20150219-0708\plugin.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.emf.mapping.ecore_2.8.0.v20150123-0452\feature.xml" />
+     <None Include="Assets\Downloads\Baidu-Push-SDK-Android-L2-4.5.1\res\layout\custom_activity.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.enablement.sap.feature_1.12.0.v201406061321-540AkF7AJ7YEJBU7S\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.datatools.common.doc.user_1.12.0.v201405281819-26-311A16321A3557\feature.xml" />
+     <None Include="Assets\Downloads\eclipse\configuration\org.eclipse.osgi\310\data\488767550\artifacts.xml" />
+     <None Include="Assets\Downloads\eclipse\features\org.eclipse.pde_3.10.1.v20150204-1700\feature.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Runtime.Interfaces">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.Runtime.Interfaces/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.Runtime.Interfaces.dll</HintPath>
+ </Reference>
+ <Reference Include="OmniSharp">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/OmniSharp/1.0.0/lib/aspnetcore50/OmniSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.WebUtilities">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.WebUtilities/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.WebUtilities.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.CSharp.Desktop">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.CSharp/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.CSharp.Desktop.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.RequestContainer">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.RequestContainer/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.RequestContainer.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Mvc.Razor.Host">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Mvc.Razor.Host/6.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Mvc.Razor.Host.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/client/vs/workbench/contrib/debug/bin/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.NRefactory6.CSharp">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/ICSharpCode.NRefactory/6.0.0-alpha3/lib/Net45/ICSharpCode.NRefactory6.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Debugging.Soft">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/client/vs/workbench/contrib/debug/bin/Mono.Debugging.Soft.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Http.Core">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Http.Core/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Http.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Newtonsoft.Json/6.0.8/lib/net45/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Mvc.Razor">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Mvc.Razor/6.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Mvc.Razor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.VisualBasic.Workspaces.Desktop">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.VisualBasic.Workspaces/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.Desktop.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Metadata">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/System.Reflection.Metadata/1.0.18-beta/lib/portable-net45+win8/System.Reflection.Metadata.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Runtime.Roslyn">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.Framework.Runtime.Roslyn.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.CSharp">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.CSharp/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.Desktop">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.CodeAnalysis.Desktop.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.Common/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.ConfigurationModel.Json">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.ConfigurationModel.Json/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.ConfigurationModel.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.VisualBasic">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.VisualBasic/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.FeatureModel">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.FeatureModel/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.FeatureModel.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.DesignTimeHost">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/lib/Microsoft.Framework.DesignTimeHost/Microsoft.Framework.DesignTimeHost.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Net.Http.Headers">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Net.Http.Headers/1.0.0-beta3/lib/aspnet50/Microsoft.Net.Http.Headers.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Razor">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Razor/4.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Razor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.Desktop">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.Common/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.Desktop.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.Workspaces">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.Workspaces.Common/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Composition.Convention">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Composition/1.0.30/lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Cache.Memory">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.Cache.Memory/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.Cache.Memory.dll</HintPath>
+ </Reference>
+ <Reference Include="Kestrel">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Kestrel/1.0.0-beta3/lib/aspnet50/Kestrel.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil.Mdb">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/client/vs/workbench/contrib/debug/bin/Mono.Cecil.Mdb.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Project">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/lib/Microsoft.Framework.Project/Microsoft.Framework.Project.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.PackageManager">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/lib/Microsoft.Framework.PackageManager/Microsoft.Framework.PackageManager.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Logging.Console">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.Logging.Console/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.Logging.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Logging">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.Logging/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.Logging.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Hosting">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Hosting/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Hosting.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Composition.Hosting">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Composition/1.0.30/lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Net.Http.Client">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.Net.Http.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Immutable">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/System.Collections.Immutable.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Http.Interfaces">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Http.Interfaces/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Http.Interfaces.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.CSharp.Desktop">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.CodeAnalysis.CSharp.Desktop.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.FileSystemGlobbing">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.FileSystemGlobbing/1.0.0-beta4-11256/lib/net45/Microsoft.Framework.FileSystemGlobbing.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Logging.Interfaces">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.Logging.Interfaces/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.Logging.Interfaces.dll</HintPath>
+ </Reference>
+ <Reference Include="kre.host">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/kre.host.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.DependencyInjection">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.DependencyInjection/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.DependencyInjection.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Runtime.Roslyn.Common">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.Framework.Runtime.Roslyn.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.ConfigurationModel">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.ConfigurationModel/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.ConfigurationModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Metadata">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/System.Reflection.Metadata.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.VisualBasic.Workspaces">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.VisualBasic.Workspaces/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Runtime.Roslyn.Common">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.Runtime.Roslyn.Common/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.Runtime.Roslyn.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Mvc.Core">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Mvc.Core/6.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Mvc.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Razor.Runtime">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Razor.Runtime/4.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Razor.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Runtime.Loader">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.Framework.Runtime.Loader.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.NRefactory.CSharp">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/client/vs/workbench/contrib/debug/bin/ICSharpCode.NRefactory.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.Runtime">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.Framework.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Composition.Runtime">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Composition/1.0.30/lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.ApplicationHost">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.Framework.ApplicationHost.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.SDB">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/client/vs/workbench/contrib/debug/bin/Microsoft.SDB.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.CSharp">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Diagnostics">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Diagnostics/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Diagnostics.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Mvc">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Mvc/6.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Mvc.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Debugging">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/client/vs/workbench/contrib/debug/bin/Mono.Debugging.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Framework.OptionsModel">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Framework.OptionsModel/1.0.0-beta3/lib/aspnet50/Microsoft.Framework.OptionsModel.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Http">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Http/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.FileProviders.Interfaces">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.FileProviders.Interfaces/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.FileProviders.Interfaces.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Immutable">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/System.Collections.Immutable/1.1.33-beta/lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Http.Extensions">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Http.Extensions/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Http.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces.Desktop">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.CSharp.Workspaces/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.Desktop.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Security.DataProtection">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Security.DataProtection/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Security.DataProtection.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.VisualBasic.Desktop">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.VisualBasic/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.VisualBasic.Desktop.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/Microsoft.CodeAnalysis.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Composition.AttributedModel">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Composition/1.0.30/lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.Workspaces.Desktop">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.Workspaces.Common/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Routing">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Routing/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Routing.dll</HintPath>
+ </Reference>
+ <Reference Include="OmniSharp">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/OmniSharp/1.0.0/lib/aspnet50/OmniSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.CodeAnalysis.CSharp.Workspaces/1.0.0-rc1/lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Server.Kestrel">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Server.Kestrel/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Server.Kestrel.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Security">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Security/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Composition.TypedParts">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.Composition/1.0.30/lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.FileProviders">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.FileProviders/1.0.0-beta3/lib/aspnet50/Microsoft.AspNet.FileProviders.dll</HintPath>
+ </Reference>
+ <Reference Include="kre.mono.managed">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/kre-mono.1.0.0-beta3/bin/kre.mono.managed.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Debugger.Soft">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/client/vs/workbench/contrib/debug/bin/Mono.Debugger.Soft.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.NRefactory6.CSharp.Refactoring">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/ICSharpCode.NRefactory/6.0.0-alpha3/lib/Net45/ICSharpCode.NRefactory6.CSharp.Refactoring.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.NRefactory">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/client/vs/workbench/contrib/debug/bin/ICSharpCode.NRefactory.dll</HintPath>
+ </Reference>
+ <Reference Include="OmniSharp.Stdio">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/OmniSharp.Stdio/1.0.0/lib/aspnet50/OmniSharp.Stdio.dll</HintPath>
+ </Reference>
+ <Reference Include="OmniSharp.Stdio">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/OmniSharp.Stdio/1.0.0/lib/aspnetcore50/OmniSharp.Stdio.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.AspNet.Mvc.ModelBinding">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/plugins/vs.language.csharp.o/omnisharp/bin/approot/packages/Microsoft.AspNet.Mvc.ModelBinding/6.0.0-beta3/lib/aspnet50/Microsoft.AspNet.Mvc.ModelBinding.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/jeffrey/Game/Assets/Downloads/VSCode-osx/Visual Studio Code.app/Contents/Resources/app/client/vs/workbench/contrib/debug/bin/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
